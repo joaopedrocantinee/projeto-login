@@ -29,7 +29,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Esses 4 itens acima, são para centralizar a div#formulario ao meio da tela verticalmente. Permite deixar a div flexível, depois, centraliza horizontalmente, depois verticalmente e ocupa 100vh, que é o que define onde a div ficará.*/
+    /* Esses 4 itens acima, são para centralizar a div#formulario ao meio da tela verticalmente. Permite deixar a div flexível, depois, centraliza horizontalmente, depois verticalmente e ocupa 100vh, que é o que define onde a div ficará. Como a div foi configurada para ficar no centro da tela (align-items), o height indicará o tamanho que ocupará essa tag (section) na tela, fazendo ela ficar sempre em 50% do valor do height, nesse caso, ficará no centro da tela  */
 }
 
 div#formulario {
