@@ -17,9 +17,23 @@
     --cor02: #5f2c82
 }
 
-body {
+html, body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    background: linear-gradient(to bottom, #49a09d, #5f2c82);
     background-repeat: no-repeat;
+}
+
+div#formulario {
+    width: 60vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    
+}
+
+div#formulario > h1 {
+    padding-bottom: 20px;
 }
