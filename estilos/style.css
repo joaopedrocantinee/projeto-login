@@ -5,3 +5,21 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor01: #49a09d
+    --cor02: #5f2c82
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    background-repeat: no-repeat;
+}
