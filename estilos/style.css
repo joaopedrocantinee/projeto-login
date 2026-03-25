@@ -24,6 +24,14 @@ html, body {
     background-repeat: no-repeat;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Esses 4 itens acima, são para centralizar a div#formulario ao meio da tela verticalmente. Permite deixar a div flexível, depois, centraliza horizontalmente, depois verticalmente e ocupa 100vh, que é o que define onde a div ficará.*/
+}
+
 div#formulario {
     width: 60vw;
     margin: auto;
