@@ -25,47 +25,35 @@ html, body {
 }
 
 main {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 section#login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    /* Esses 4 itens acima, são para centralizar a div#formulario ao meio da tela verticalmente. Permite deixar a div flexível, depois, centraliza horizontalmente, depois verticalmente e ocupa 100vh, que é o que define onde a div ficará. Como a div foi configurada para ficar no centro da tela (align-items), o height indicará o tamanho que ocupará essa tag (section) na tela, fazendo ela ficar sempre em 50% do valor do height, nesse caso, ficará no centro da tela  */
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* Tudo o que estiver para "fora da borda", ficará escondido. (deixou a borda na parte da foto arredondada)  */
     background-color: white;
     width: 250px;
-    margin: auto;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
 }
 
 section#login > div#imagem {
+    display: block;
     background: #49a09d url(../imagens/metal.jpg);
+    background-size: cover;
+    background-position: left bottom;
     height: 200px;
 }
 
-div#formulario {
-    width: 60vw;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0px 0px 10px #0000006b;
-    
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
 
-div#formulario > h1 {
-    padding-bottom: 20px;
-}
-
-div#formulario > p {
-    padding-bottom: 20px;
-}
 
