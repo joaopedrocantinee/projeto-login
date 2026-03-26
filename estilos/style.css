@@ -45,3 +45,8 @@ div#formulario {
 div#formulario > h1 {
     padding-bottom: 20px;
 }
+
+div#formulario > p {
+    padding-bottom: 20px;
+}
+

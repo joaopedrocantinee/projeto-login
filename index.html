@@ -20,7 +20,20 @@
 
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form action="login.php" method="post">
+                <form action="backend/login.php" method="post" autocomplete="on">
+
+                    <p>
+                        <input type="email" name="loginemail" id="iloginemail"
+                        placeholder=" E-mail" required>
+                    </p>
+
+                    <p>
+                        <input type="password" name="senha" id="isenha" placeholder=" Senha" required>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Entrar">
+                    </p>
 
                 </form>
             </div>
