@@ -9,7 +9,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box; /* Para contar width, padding, border, margin, etc. todos como 'um só', e não valores unitários, ou seja, os conteúdos se adequam à sua div so tamanho que voce definir, não somando o valor de width + padding por exemplo. */
 }
 
 :root {
@@ -20,16 +21,33 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #49a09d, #5f2c82);
-    background-repeat: no-repeat;
+    background-color: #49a09d;
 }
 
-section {
+main {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+section#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
     /* Esses 4 itens acima, são para centralizar a div#formulario ao meio da tela verticalmente. Permite deixar a div flexível, depois, centraliza horizontalmente, depois verticalmente e ocupa 100vh, que é o que define onde a div ficará. Como a div foi configurada para ficar no centro da tela (align-items), o height indicará o tamanho que ocupará essa tag (section) na tela, fazendo ela ficar sempre em 50% do valor do height, nesse caso, ficará no centro da tela  */
+
+    background-color: white;
+    width: 250px;
+    margin: auto;
+}
+
+section#login > div#imagem {
+    background: #49a09d url(../imagens/metal.jpg);
+    height: 200px;
 }
 
 div#formulario {
