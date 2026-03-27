@@ -23,20 +23,28 @@
 
                 <form action="backend/login.php" method="post" autocomplete="on">
 
-                    <p>
+                    <div class="campo">
+                      
                         <input type="email"
-                        name="loginemail"
-                        id="iloginemail"
+                        name="login"
+                        id="ilogin"
                         placeholder=" E-mail" required>
-                    </p>
 
-                    <p>
+                        <label for="ilogin"> Login</label>
+
+                    </div>
+
+                    <div class="campo">
+
                         <input type="password" name="senha" id="isenha" placeholder=" Senha" required>
-                    </p>
 
-                    <p>
+                        <label for="isenha"> Senha</label>
+
+                    </div>
+
+                    <div>
                         <input type="submit" value="Entrar">
-                    </p>
+                    </div>
 
                 </form>
             </div>
