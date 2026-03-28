@@ -34,7 +34,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden; /* Tudo o que estiver para "fora da borda", ficará escondido. (deixou a borda na parte da foto arredondada)  */
     background-color: white;
     width: 250px;
@@ -42,6 +41,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -67,6 +67,7 @@ div#formulario > h1 {
 div#formulario > p {
     font-size: .8em;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 form > div.campo {
@@ -81,6 +82,31 @@ form > div.campo {
 
 form > div.campo > label.escrita {
     display: none;
+}
+
+div.campo i {
+    color: #397c78;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo i:hover {
+    color: #49a09d;
+}
+
+div.campo input {
+    background-color: #b7e7e5;
+    font-size: 1em;
+    width: calc(100% - 44.4px);
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+    padding: 4px;
+    transform: translateY(-5.4px);
+}
+
+div.campo input:focus-within {
+    background-color: white;
 }
 
 form > div > input[type=submit] {

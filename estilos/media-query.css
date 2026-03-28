@@ -20,7 +20,10 @@
     section#login > div#formulario {
         float: right;
         width: 70%;
+    }
 
+    div#formulario {
+        transform: translateY(7%);
     }
 
     div#formulario > p {
@@ -50,10 +53,16 @@
     }
 
     div#formulario > h1 {
-    font-size: 2em;
+        margin-top: 0px;
+        font-size: 2em;
     }
 
     div#formulario > p {
-    font-size: 1.2em;
+        font-size: 1.2em;
+        margin: 20px 0px;
+    }
+
+    div#formulario {
+        transform: translateY(15%);
     }
 }
