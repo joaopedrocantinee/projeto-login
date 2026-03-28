@@ -22,12 +22,12 @@
         width: 70%;
     }
 
-    div#formulario {
-        transform: translateY(7%);
-    }
-
     div#formulario > p {
     font-size: 1.1em;
+    }
+
+    div#formulario {
+        transform: translateY(7%);
     }
 }
 
